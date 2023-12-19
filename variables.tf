@@ -60,7 +60,7 @@ variable "ami_type" {
 variable "enable_argocd_helm_release" {
   type        = bool
   default     = true
-  description = "Enable/disable ArgoCD Helm chart deployment on DOKS"
+  description = "Enable/disable ArgoCD Helm chart deployment on EKS"
 }
 
 variable "argocd_helm_repo" {
@@ -72,13 +72,13 @@ variable "argocd_helm_repo" {
 variable "argocd_helm_chart" {
   type        = string
   default     = "argo-cd"
-  description = "argocd Helm chart name"
+  description = "Argocd Helm chart name"
 }
 
 variable "argocd_helm_release_name" {
   type        = string
   default     = "argocd"
-  description = "argocd Helm release name"
+  description = "Argocd Helm release name"
 }
 
 variable "argocd_helm_chart_version" {
